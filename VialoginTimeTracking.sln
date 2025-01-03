@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VialoginTimeTrackingAPI", "VialoginTimeTrackingAPI\VialoginTimeTrackingAPI.csproj", "{4FB107CC-A8B1-4393-BC2A-CA8084BC180F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VialoginTimeTrackingTests", "VialoginTimeTrackingTests\VialoginTimeTrackingTests.csproj", "{CFE3FD9F-012E-457F-B916-B6465A68A64B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB107CC-A8B1-4393-BC2A-CA8084BC180F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB107CC-A8B1-4393-BC2A-CA8084BC180F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB107CC-A8B1-4393-BC2A-CA8084BC180F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB107CC-A8B1-4393-BC2A-CA8084BC180F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE3FD9F-012E-457F-B916-B6465A68A64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE3FD9F-012E-457F-B916-B6465A68A64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE3FD9F-012E-457F-B916-B6465A68A64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE3FD9F-012E-457F-B916-B6465A68A64B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
