@@ -61,12 +61,12 @@ Utiliza **Docker** e **Docker Compose** para orquestração.
 
 1. Teste de inclusão de usuários
     ```bash
-    cd .\timetracking\frontend\src\test\load\
+    cd .\frontend\src\test\load\
     k6 run --out json=addUsersLoadTest.json addUsersLoadTest.js
 
 2. Teste de busca de usuários
     ```bash
-    cd .\timetracking\frontend\src\test\load\
+    cd .\frontend\src\test\load\
     k6 run --out json=getUsersLoadTest.js getUsersLoadTest.js
 
 ## Licença
