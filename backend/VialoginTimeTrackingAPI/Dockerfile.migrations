@@ -1,0 +1,32 @@
+# Usar o SDK do .NET para rodar as migrations
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /app
+
+# Instalar a ferramenta dotnet-ef
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Copiar arquivos de projeto e restaurar dependências
+COPY *.csproj ./
+WORKDIR /app
+RUN dotnet restore
+
+# Copiar todo o código
+WORKDIR /app
+COPY . ./
+
+# Compilar o projeto
+RUN dotnet publish -c Release -o out
+
+# Etapa de runtime
+FROM mcr.microsoft.com/dotnet/sdk:9.0
+WORKDIR /app
+COPY . ./
+COPY --from=build /app/out .
+
+# Instalar novamente a ferramenta dotnet-ef para o runtime
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Comando para aplicar migrations e manter o contêiner ativo
+ENTRYPOINT ["sh", "-c", "until dotnet ef database update --project /app/VialoginTimeTrackingAPI.csproj --context ApplicationDbContext; do echo 'Aguardando banco de dados...'; sleep 5; done && echo 'Migrations concluídas com sucesso!'"]

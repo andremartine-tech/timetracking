@@ -1,0 +1,88 @@
+/* Estilização da página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche toda a altura da janela */
+    background-color: #f4f6f8; /* Fundo suave */
+    padding: 16px; /* Para garantir espaçamento em telas menores */
+  }
+  
+  /* Wrapper do formulário */
+  .formWrapper {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Logotipo */
+  .logo {
+    max-width: 120px;
+    margin-bottom: 16px;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  /* Estilo para os inputs */
+  .input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Botão */
+  .button {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mensagem de erro */
+  .error {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .formWrapper {
+      padding: 24px;
+    }
+  
+    .logo {
+      max-width: 100px;
+    }
+  
+    .title {
+      font-size: 1.25rem;
+    }
+  }
+  
