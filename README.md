@@ -40,22 +40,22 @@ Utiliza **Docker** e **Docker Compose** para orquestração.
     docker-compose up --build
 
 3. Verifique se os serviços estão conforme os status abaixo:
-    ✔ Network timelog_default          Created
-    ✔ Container timelog-rabbitmq-1     Healthy
-    ✔ Container timelog-database-1     Healthy
-    ✔ Container timelog-migrations-1   Exited
-    ✔ Container timelog-api-1          Healthy
-    ✔ Container timelog-frontend-1     Started 
+    - ✔ Network timelog_default          Created
+    - ✔ Container timelog-rabbitmq-1     Healthy
+    - ✔ Container timelog-database-1     Healthy
+    - ✔ Container timelog-migrations-1   Exited
+    - ✔ Container timelog-api-1          Healthy
+    - ✔ Container timelog-frontend-1     Started 
 
 4. Acesse os serviços:    
     
-    Frontend: http://localhost:3000
-    API: http://localhost:5000
-    RabbitMQ Management: http://localhost:15672
-        Usuário: guest, Senha: guest
+    - Frontend: http://localhost:3000
+    - API: http://localhost:5000
+    - RabbitMQ Management: http://localhost:15672
+        - Usuário: guest, Senha: guest
 
 5. Monitoramento e Saúde
-    API Healthcheck: http://localhost:5000/health
+    - API Healthcheck: http://localhost:5000/health
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
