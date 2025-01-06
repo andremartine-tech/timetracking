@@ -3,10 +3,10 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copiar o certificado SSL
-COPY aspnetapp.pfx /https/aspnetapp.pfx
+# COPY aspnetapp.pfx /https/aspnetapp.pfx
 
-ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
-ENV ASPNETCORE_Kestrel__Certificates__Default__Password=k4hvd891
+# ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+# ENV ASPNETCORE_Kestrel__Certificates__Default__Password=k4hvd891
 
 # Copiar arquivos de projeto e restaurar dependências
 COPY *.csproj ./
