@@ -13,9 +13,6 @@ export const options = {
   },
 };
 
-//export let out = 'influxdb=http://Vf88BPNvbZos6ttxXCJqY17Q6CbUuEWCY2gE45zYe1U-06_upOD1jjZRjaXwr5Wys6pVvMmkIwkNnFHYH2XuEg==@localhost:8086/k6';
-export let out = 'influxdb=http://localhost:8086/k6';
-
 const user = { Username: 'test', Password: 'test' }; // Usuário único para login
 
 // Setup: Executa antes de todos os VUs
@@ -34,8 +31,6 @@ export function setup() {
 }
 
 export default function (token) {
-  const iteration = __ITER; // Número da iteração atual (variável automática do K6)
-  
   const url = 'http://localhost:5000/api/Users';
   
   const params = {

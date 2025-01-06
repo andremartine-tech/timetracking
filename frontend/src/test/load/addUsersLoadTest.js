@@ -1,6 +1,5 @@
 import http from 'k6/http';
 import { check } from 'k6';
-import { SharedArray } from 'k6/data';
 
 export const options = {
   stages: [
@@ -13,9 +12,6 @@ export const options = {
     'checks': ['rate>0.95'],            // 95% das validações devem ser bem-sucedidas
   },
 };
-
-//export let out = 'influxdb=http://Vf88BPNvbZos6ttxXCJqY17Q6CbUuEWCY2gE45zYe1U-06_upOD1jjZRjaXwr5Wys6pVvMmkIwkNnFHYH2XuEg==@localhost:8086/k6';
-export let out = 'influxdb=http://localhost:8086/k6';
 
 // Função para gerar uma senha aleatória de 8 dígitos
 function generateRandomUsernameOrPassword() {

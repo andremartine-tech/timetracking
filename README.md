@@ -57,6 +57,22 @@ Utiliza **Docker** e **Docker Compose** para orquestração.
 5. Monitoramento e Saúde
     - API Healthcheck: http://localhost:5000/health
 
+## Rodar testes de desempenho
+
+1. Teste de inclusão de usuários
+    ```bash
+    cd .\timetracking\frontend\src\test\load\
+
+    ```bash
+    k6 run --out json=addUsersLoadTest.json addUsersLoadTest.js
+
+2. Teste de busca de usuários
+    ```bash
+    cd .\timetracking\frontend\src\test\load\
+
+    ```bash
+    k6 run --out json=getUsersLoadTest.js getUsersLoadTest.js
+
 ## Licença
 Este projeto está licenciado sob a MIT License.
 
