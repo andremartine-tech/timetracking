@@ -50,7 +50,9 @@ Utiliza **Docker** e **Docker Compose** para orquestração.
 4. Acesse os serviços:    
     
     - Frontend: http://localhost:3000
+        - Usuário: test, Senha: test
     - API: http://localhost:5000
+        - Usuário: test, Senha: test
     - RabbitMQ Management: http://localhost:15672
         - Usuário: guest, Senha: guest
 
